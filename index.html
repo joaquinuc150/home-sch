@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
@@ -138,7 +138,7 @@
   
               <li class="nav-item">
                 <a class="nav-link collapsed" href="users-profile.html">
-                  <i class="bx bx-user"></i>
+                  <i class="primary bx bx-user"></i>
                   <span>Mi Perfil</span>
                 </a>
               </li><!-- End Profile Page Nav -->
@@ -448,7 +448,7 @@
                                   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
                                 </div>
                                 <div class="col-2">
-                                  <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle w-50 float-end">
+                                  <img src="assets/img/profile-img.jpg" alt="Profile" style="width: 4em" class="rounded-circle float-end">
                                 </div>
                               </div>
                                 <p>
@@ -469,8 +469,31 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div>
                                 <hr>
+                                <div>
+                                  <div class="d-flex align-items-center mb-2">
+                                    <div>
+                                      <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" style="width: 4em">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                      <div class="fw-bold fs-5">Jorge Diaz Paulengo</div>
+                                      <div>26/05/2024 - 10:00 AM</div>
+                                    </div>
+                                  </div>
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                  </p>
+                                  <div class="row mt-3 publication-footer">
+                                    <div class="d-flex flex-row-reverse">
+                                      <div class="px-3">47 visualizaciones</div>
+                                      <div class="px-3">24 comentarios</div>
+                                      <div class="flex-grow-1 float-start">
+                                        &#128077;
+                                        &#128512;
+                                        15
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                                 <div class="input-group mb-3 p-2">
                                     <textarea class="form-control m-4 p-3" aria-label="With textarea" placeholder="Escribe un mensaje aquí"></textarea>
@@ -1705,57 +1728,30 @@
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-Ofertas">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOfertas" aria-expanded="false" aria-controls="flush-collapseOfertas">
-                        <i class="bi bi-grip-vertical"></i>Ofertas
+                        <i class="bi bi-grip-vertical"></i>Ofertas de empleo
                       </button>
                     </h2>
                     <div id="flush-collapseOfertas" class="accordion-collapse collapse" aria-labelledby="flush-Ofertas" data-bs-parent="#accordionOfertas">
                       <div class="accordion-body px-0">
-                        <div class="d-flex align-items-center px-2">
-                          <div class="d-flex align-items-center">
-                            Mostrar
-                          </div>
-                          <div class="col-3 ms-2 p-0">
-                            <div data-mdb-input-init class="form-outline flex-shrink-0">
-                              <input type="number" id="typeNumber" class="form-control" value="5"/>
-                            </div>
-                          </div>
-                          <div class="ms-auto flex-shrink-0" >
-                            <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal-Ofertas">
-                              <i class="bi bi-plus"></i>Nueva
-                            </button>
-                          </div>
-
-                        </div>
-                        <hr >
+                        
+                      
 
                         
                         <div class="row pb-0 px-2">
-                          <div class="row">
-                              <div class="col-1"><i class="bi bi-bell"></i></div>
-                              <div class="col "> Recuerde que este mes se debe realizar el proceso de prima</div>
+                          <div class="col">
+                            <div class="row p-2">
+                              <b>Desarrollador Front-end 3 años de experiencia</b>
+                            </div>
+                            
+
+                            <div class="row mt-1 ">
+                              <p class="ps-4" ><i class="bi bi-geo-alt" style="color: var(--primarybase)"></i> <span style="margin-left: 2px;">Chile, Santiago</span></p>
+                              <p class="ps-4" ><i class="bi bi-clock" style="color: var(--primarybase)"></i> <span style="margin-left: 2px;">100% remoto</span></p>
+                            </div>
+
                           </div>
-                          
-
-                          <div class="d-flex mt-4 ">
-                            <div class="p-2 ms-4 flex-shrink-0" ><i class="bi bi-clock"></i> <span style="color: 	#bd2f2c;">hoy</span></div>
-                            <div class="p-2 ms-auto me-3"><i class="bi bi-check"></i></div>
-                          </div>
-
-                        </div>
-
-
-                        <hr>
-
-                        <div class="row pb-0 px-2">
-                          <div class="row">
-                              <div class="col-1"><i class="bi bi-bell"></i></div>
-                              <div class="col "> Recuerde que este mes se debe realizar el proceso de prima</div>
-                          </div>
-                          
-
-                          <div class="d-flex mt-4 ">
-                            <div class="p-2 ms-4 flex-shrink-0"><i class="bi bi-clock"></i> <span style="color: 	#bd2f2c;">mañana</div>
-                            <div class="p-2 ms-auto me-3"><i class="bi bi-check"></i></div>
+                          <div class="col-3 d-flex align-items-center align-self-center" style="color: var(--primarybase)">
+                            <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal-Ofertas">Ver</button>
                           </div>
 
                         </div>
@@ -1764,15 +1760,42 @@
                         <hr>
 
                         <div class="row pb-0 px-2">
-                          <div class="row">
-                              <div class="col-1"><i class="bi bi-bell"></i></div>
-                              <div class="col "> Recuerde que este mes se debe realizar el proceso de prima</div>
-                          </div>
-                          
+                          <div class="col">
+                            <div class="row p-2">
+                              <b>Desarrollador Front-end 3 años de experiencia</b>
+                            </div>
+                            
 
-                          <div class="d-flex mt-4 ">
-                            <div class="p-2 ms-4 flex-shrink-0"><i class="bi bi-clock"></i> <span style="color: #1db81b;">30/06/2024</div>
-                            <div class="p-2 ms-auto me-3"><i class="bi bi-check"></i></div>
+                            <div class="row mt-1 ">
+                              <p class="ps-4" ><i class="bi bi-geo-alt" style="color: var(--primarybase)"></i> <span style="margin-left: 2px;">Chile, Santiago</span></p>
+                              <p class="ps-4" ><i class="bi bi-clock" style="color: var(--primarybase)"></i> <span style="margin-left: 2px;">100% remoto</span></p>
+                            </div>
+
+                          </div>
+                          <div class="col-3 d-flex align-items-center align-self-center" style="color: var(--primarybase)">
+                            <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal-Ofertas">Ver</button>
+                          </div>
+
+                        </div>
+
+
+                        <hr>
+
+                        <div class="row pb-0 px-2">
+                          <div class="col">
+                            <div class="row p-2">
+                              <b>Desarrollador Front-end 3 años de experiencia</b>
+                            </div>
+                            
+
+                            <div class="row mt-1 ">
+                              <p class="ps-4" ><i class="bi bi-geo-alt" style="color: var(--primarybase)"></i> <span style="margin-left: 2px;">Chile, Santiago</span></p>
+                              <p class="ps-4" ><i class="bi bi-clock" style="color: var(--primarybase)"></i> <span style="margin-left: 2px;">100% remoto</span></p>
+                            </div>
+
+                          </div>
+                          <div class="col-3 d-flex align-items-center align-self-center" style="color: var(--primarybase)">
+                            <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal-Ofertas">Ver</button>
                           </div>
 
                         </div>

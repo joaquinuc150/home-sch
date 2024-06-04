@@ -2881,8 +2881,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #0d6efd;
-  --bs-btn-border-color: #0d6efd;
+  --bs-btn-bg: var(--primarybase);
+  --bs-btn-border-color: var(--primarybase);
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #0b5ed7;
   --bs-btn-hover-border-color: #0a58ca;
@@ -2932,8 +2932,8 @@ textarea.form-control-lg {
 
 .btn-info {
   --bs-btn-color: #000;
-  --bs-btn-bg: #0dcaf0;
-  --bs-btn-border-color: #0dcaf0;
+  --bs-btn-bg: var(--secondarylight-10);
+  --bs-btn-border-color: var(--secondarylight-10);
   --bs-btn-hover-color: #000;
   --bs-btn-hover-bg: #31d2f2;
   --bs-btn-hover-border-color: #25cff2;
@@ -4720,8 +4720,8 @@ textarea.form-control-lg {
 
 .alert-info {
   --bs-alert-color: #055160;
-  --bs-alert-bg: #cff4fc;
-  --bs-alert-border-color: #b6effb;
+  --bs-alert-bg: var(--secondarylight-90);
+  --bs-alert-border-color: var(--secondarylight-90);
 }
 .alert-info .alert-link {
   color: #04414d;

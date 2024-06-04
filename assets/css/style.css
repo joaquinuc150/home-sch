@@ -49,6 +49,13 @@ iframe {
 	width: 100%;
 }
 
+.primary{
+  color: var(--primarybase);
+}
+
+.secondary{
+  color: var(--secondarylight-10)
+}
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
@@ -399,7 +406,7 @@ iframe {
   transition: all 0.5s;
   height: 100px;
   /* box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1); */
-  background-color: var(--secondarybase);
+  background-color: var(--primarybase);
   padding-left: 20px;
   /* Toggle Sidebar Button */
   /* Search Bar */
@@ -699,17 +706,17 @@ iframe {
 .sidebar-nav .nav-link i {
   font-size: 16px;
   margin-right: 10px;
-  color: #FFFF;
+  /* color: #FFFF; */
 }
 
 .sidebar-nav .nav-link.collapsed {
-  color: #012970;
+  color: var(--graybase);
   background: #fff;
 }
 
 .sidebar-nav .nav-link.collapsed i {
-  color: #012970;
-}
+  color: var(--primarybase);
+} 
 
 .sidebar-nav .nav-link:hover {
   color: #f6f9ff;
@@ -790,7 +797,7 @@ iframe {
 
 .toggle-sidebar-btn{
   font-size: 2em; /* Cambia el tamaño del icono */
-  color: #1CA5EA; /* Cambia el color del icono */
+  color: var(--secondarylight-10); /* Cambia el color del icono */
   display: inline-block;
   transition: transform 0.3s ease;
   cursor: pointer;
