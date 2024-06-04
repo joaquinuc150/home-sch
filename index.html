@@ -609,7 +609,7 @@
                                         <div class="row">
                                           <div class="col-9 m-auto">
                                             <div class="mx-4 mt-4">
-                                              <div class="progress" style="height: 2px; width: 90%; left: 30%">
+                                              <div class="progress" style="height: 2px; width: 95%;">
                                                 <div class="progress-bar" role="progressbar" aria-label="Progress" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                               </div>
                                               <div class="d-flex justify-content-between">
@@ -641,7 +641,7 @@
                                         <div class="row">
                                           <div class="col-9 m-auto">
                                             <div class="mx-4 mt-4">
-                                              <div class="progress" style="height: 2px; width: 90%; left: 30%">
+                                              <div class="progress" style="height: 2px; width: 95%;">
                                                 <div class="progress-bar" role="progressbar" aria-label="Progress" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                               </div>
                                               <div class="d-flex justify-content-between">
@@ -673,7 +673,7 @@
                                         <div class="row">
                                           <div class="col-9 m-auto">
                                             <div class="mx-4 mt-4">
-                                              <div class="progress" style="height: 2px; width: 90%; left: 30%">
+                                              <div class="progress" style="height: 2px; width: 95%;">
                                                 <div class="progress-bar" role="progressbar" aria-label="Progress" style="width: 80%;" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
                                               </div>
                                               <div class="d-flex justify-content-between">
@@ -719,7 +719,7 @@
                                         <div class="row">
                                           <div class="col-9 m-auto">
                                             <div class="mx-4 mt-4">
-                                              <div class="progress" style="height: 2px; width: 90%; left: 30%">
+                                              <div class="progress" style="height: 2px; width: 95%;">
                                                 <div class="progress-bar" role="progressbar" aria-label="Progress" style="width: 100%;" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
                                               </div>
                                               <div class="d-flex justify-content-between">
@@ -751,7 +751,7 @@
                                         <div class="row">
                                           <div class="col-9 m-auto">
                                             <div class="mx-4 mt-4">
-                                              <div class="progress" style="height: 2px; width: 90%; left: 30%">
+                                              <div class="progress" style="height: 2px; width: 95%;">
                                                 <div class="progress-bar" role="progressbar" aria-label="Progress" style="width: 100%;" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
                                               </div>
                                               <div class="d-flex justify-content-between">
@@ -1701,45 +1701,44 @@
                 </div><!--End Widget NuevosIngresos-->
 
                 <!--Widget Ofertas-->
-                <div class="accordion" id="accordionOfertas" style="margin-top: 10pt;">
+                <div class="accordion" id="accordionOfertas">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-Ofertas">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOfertas" aria-expanded="false" aria-controls="flush-collapseOfertas">
-                        <i class="bi bi-grip-vertical"></i>Ofertas de empleo
+                        <i class="bi bi-grip-vertical"></i>Ofertas
                       </button>
                     </h2>
                     <div id="flush-collapseOfertas" class="accordion-collapse collapse" aria-labelledby="flush-Ofertas" data-bs-parent="#accordionOfertas">
-                      <div class="accordion-body">
-                        <div class="row pb-0">
-                          <div class="col-md-2 p-0 d-flex justify-content-center align-self-center">
-                            <a><img src="assets/img/profile-img.jpg" alt="Profile" class="img-fluid rounded-circle float-center"></a>
-                            
+                      <div class="accordion-body px-0">
+                        <div class="d-flex align-items-center px-2">
+                          <div class="d-flex align-items-center">
+                            Mostrar
                           </div>
-                          <div class="col-md-7 pb-0">
-                            <h5 style="margin-bottom: 0; font-size: 16px;">Anderson</h5> 
-                            <h6 style="margin-top: 0; margin-bottom: 0; font-size: 14px;">Jefe Recursos Humanos</h6>
-                            <p style="font-size: 14px; color: #1db81b;">Este mes<p>
+                          <div class="col-3 ms-2 p-0">
+                            <div data-mdb-input-init class="form-outline flex-shrink-0">
+                              <input type="number" id="typeNumber" class="form-control" value="5"/>
+                            </div>
                           </div>
-                          <div class="col-md-2 d-flex justify-content-center align-self-center" style="margin-left: 10px; margin-right: 5px;">
-                            <button type="button" class="btn btn-primary">Saludar</button>
+                          <div class="ms-auto flex-shrink-0" >
+                            <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal-Ofertas">
+                              <i class="bi bi-plus"></i>Nueva
+                            </button>
                           </div>
 
                         </div>
-                        <hr>
+                        <hr >
 
                         
-                        <div class="row pb-0">
-                          <div class="col-md-2 p-0 d-flex justify-content-center align-self-center">
-                            <a><img src="assets/img/profile-img.jpg" alt="Profile" class="img-fluid rounded-circle float-center"></a>
-                            
+                        <div class="row pb-0 px-2">
+                          <div class="row">
+                              <div class="col-1"><i class="bi bi-bell"></i></div>
+                              <div class="col "> Recuerde que este mes se debe realizar el proceso de prima</div>
                           </div>
-                          <div class="col-md-7 pb-0">
-                            <h5 style="margin-bottom: 0; font-size: 16px;">Anderson</h5> 
-                            <h6 style="margin-top: 0; margin-bottom: 0; font-size: 14px;">Jefe Recursos Humanos</h6>
-                            <p style="font-size: 14px; color: #1db81b;">Este mes</p>
-                          </div>
-                          <div class="col-md-2 d-flex justify-content-center align-self-center" style="margin-left: 10px; margin-right: 5px;">
-                            <button type="button" class="btn btn-primary">Saludar</button>
+                          
+
+                          <div class="d-flex mt-4 ">
+                            <div class="p-2 ms-4 flex-shrink-0" ><i class="bi bi-clock"></i> <span style="color: 	#bd2f2c;">hoy</span></div>
+                            <div class="p-2 ms-auto me-3"><i class="bi bi-check"></i></div>
                           </div>
 
                         </div>
@@ -1747,36 +1746,33 @@
 
                         <hr>
 
-                        <div class="row pb-0">
-                          <div class="col-md-2 p-0 d-flex justify-content-center align-self-center">
-                            <a><img src="assets/img/profile-img.jpg" alt="Profile" class="img-fluid rounded-circle float-center"></a>
-                            
+                        <div class="row pb-0 px-2">
+                          <div class="row">
+                              <div class="col-1"><i class="bi bi-bell"></i></div>
+                              <div class="col "> Recuerde que este mes se debe realizar el proceso de prima</div>
                           </div>
-                          <div class="col-md-7 pb-0">
-                            <h5 style="margin-bottom: 0; font-size: 16px;">Anderson</h5> 
-                            <h6 style="margin-top: 0; margin-bottom: 0; font-size: 14px;">Jefe Recursos Humanos</h6>
-                            <p style="font-size: 14px; color: #1db81b;">Este mes</p>
-                          </div>
-                          <div class="col-md-2 d-flex justify-content-center align-self-center" style="margin-left: 10px; margin-right: 5px;">
-                            <button type="button" class="btn btn-primary">Saludar</button>
+                          
+
+                          <div class="d-flex mt-4 ">
+                            <div class="p-2 ms-4 flex-shrink-0"><i class="bi bi-clock"></i> <span style="color: 	#bd2f2c;">mañana</div>
+                            <div class="p-2 ms-auto me-3"><i class="bi bi-check"></i></div>
                           </div>
 
                         </div>
 
+
                         <hr>
 
-                        <div class="row pb-0">
-                          <div class="col-md-2 p-0 d-flex justify-content-center align-self-center">
-                            <a><img src="assets/img/profile-img.jpg" alt="Profile" class="img-fluid rounded-circle float-center"></a>
-                            
+                        <div class="row pb-0 px-2">
+                          <div class="row">
+                              <div class="col-1"><i class="bi bi-bell"></i></div>
+                              <div class="col "> Recuerde que este mes se debe realizar el proceso de prima</div>
                           </div>
-                          <div class="col-md-7 pb-0">
-                            <h5 style="margin-bottom: 0; font-size: 16px;">Anderson</h5> 
-                            <h6 style="margin-top: 0; margin-bottom: 0; font-size: 14px;">Jefe Recursos Humanos</h6>
-                            <p style="font-size: 14px; color: #1db81b;">Este mes</p>
-                          </div>
-                          <div class="col-md-2 d-flex justify-content-center align-self-center" style="margin-left: 10px; margin-right: 5px;">
-                            <button type="button" class="btn btn-primary">Saludar</button>
+                          
+
+                          <div class="d-flex mt-4 ">
+                            <div class="p-2 ms-4 flex-shrink-0"><i class="bi bi-clock"></i> <span style="color: #1db81b;">30/06/2024</div>
+                            <div class="p-2 ms-auto me-3"><i class="bi bi-check"></i></div>
                           </div>
 
                         </div>
@@ -1809,7 +1805,7 @@
 
 
                   </div>
-                </div><!--End Widget Ofertas-->
+                </div> <!--End Widget Ofertas-->
                 
 
               </div><!-- End Right side columns -->
