@@ -45,7 +45,8 @@
     on('click', '.toggle-sidebar-btn', function(e) {
       select('body').classList.toggle('toggle-sidebar');
       select('.sidebar').classList.toggle('mini-sidebar');
-      select('.toggle-sidebar-btn').classList.toggle('rotated')
+      select('.toggle-sidebar-btn').classList.toggle('rotated');
+      select('.toggle-sidebar-btn').classList.toggle('mx-auto');
     })
   }
 
@@ -57,7 +58,6 @@
       select('.search-bar').classList.toggle('search-bar-show')
     })
   }
-
   /**
    * Navbar links active state on scroll
    */

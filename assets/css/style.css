@@ -11,11 +11,12 @@
 --------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
+  
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  background: #f6f9ff;
+  font-family: "Nunito", Helvetica;
+  background: #fff;
   color: #444444;
 }
 
@@ -35,11 +36,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", Helvetica;
 }
 
 textarea {
   resize: none;
+}
+
+iframe {
+	aspect-ratio: 16 / 9;
+	height: 100%;
+	width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -226,6 +233,14 @@ textarea {
   border: none;
   border-radius: 5px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  
+}
+
+.colaborador{
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: var(--graylight-80);
+  box-shadow: none;
 }
 
 .card-header,
@@ -383,8 +398,8 @@ textarea {
 .header {
   transition: all 0.5s;
   height: 100px;
-  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  background-color: #1ca5ea;
+  /* box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1); */
+  background-color: var(--secondarybase);
   padding-left: 20px;
   /* Toggle Sidebar Button */
   /* Search Bar */
@@ -397,8 +412,7 @@ textarea {
   color: #012970;
 }
 
-.header .search-bar {
-  min-width: 360px;
+.search-bar {
   padding: 0 20px;
 }
 
@@ -423,36 +437,36 @@ textarea {
   }
 }
 
-.header .search-form {
+.search-form {
   width: 100%;
 }
 
-.header .search-form input {
+.search-form input {
   border: 0;
   font-size: 14px;
   color: #012970;
   border: 1px solid rgba(1, 41, 112, 0.2);
   padding: 7px 38px 7px 8px;
-  border-radius: 3px;
+  border-radius: 8px;
   transition: 0.3s;
   width: 100%;
 }
 
-.header .search-form input:focus,
-.header .search-form input:hover {
+.search-form input:focus,
+.search-form input:hover {
   outline: none;
   box-shadow: 0 0 10px 0 rgba(1, 41, 112, 0.15);
   border: 1px solid rgba(1, 41, 112, 0.3);
 }
 
-.header .search-form button {
+.search-form button {
   border: 0;
   padding: 0;
   margin-left: -30px;
   background: none;
 }
 
-.header .search-form button i {
+.search-form button i {
   color: #012970;
 }
 
@@ -602,13 +616,13 @@ textarea {
 .sidebar {
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 18vw;
   transition: all 0.3s;
   padding: 20px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
-  box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+  /* box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1); */
   background-color: #fff;
 }
 
@@ -621,7 +635,7 @@ textarea {
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-  background-color: #aab7cf;
+  background-color: #FFFF;
 }
 
 /* @media (min-width: 1200px) {
@@ -795,9 +809,19 @@ textarea {
   color: black;
 }
 
+.accordion-item {
+  margin-top: 2em;
+  margin-bottom: 2em,
+}
+
+.accordion-button {
+  padding: 0.5em;
+  
+}
+
 .accordion-button,
 .accordion-button:not(.collapsed){
-  background-color: rgba(128,128,128,0.2);
+  background-color: var(--graylight-90);
   color: #212529;
   font-weight: bold;
 }
@@ -810,6 +834,12 @@ textarea {
   background-color: rgba(0,0,0,0.6);
   right: 10%;
   left: 10%;
+}
+
+.carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
 }
 
 .carousel-caption > h3 {
@@ -828,6 +858,42 @@ textarea {
 
 .curso-detail {
   font-size: 14px;
+}
+
+.nav-link {
+  color: var(--bs-secondary-rgb);
+}
+
+.nav-link.active {
+  background: transparent;
+  color: var(--bs-link-color);
+  font-weight: bold;
+  border-bottom: 4px solid var(--bs-link-color);
+}
+
+.btn-cursos, 
+.btn-cursos:hover, 
+.progress-bar {
+  background-color: var(--secondarylight-10);
+  font-weight: bold;
+}
+
+.btn-cursos-off,
+.btn-cursos-off:hover{
+  background-color: var(--graylight-80);
+  font-weight: bold;
+}
+
+.btn-cursos-active{
+  background-color: var(--secondarylight-10);
+  font-weight: bold;
+  outline: 3px solid var(--secondarylight-10);
+  outline-offset: 0.3em;
+}
+
+.widgets {
+  -ms-flex: 0 0 25vw;
+  flex: 0 0 25vw;
 }
 
 /* Filter dropdown */
