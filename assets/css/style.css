@@ -407,7 +407,7 @@ iframe {
   height: 100px;
   /* box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1); */
   background-color: var(--primarybase);
-  padding-left: 20px;
+  padding-left: px;
   /* Toggle Sidebar Button */
   /* Search Bar */
 }
